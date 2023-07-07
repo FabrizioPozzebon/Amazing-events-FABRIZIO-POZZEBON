@@ -24,13 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-5">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link text-white" aria-current="page" href="../../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="./upcoming.html">Upcoming Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-white" href="./past.html">Past Events</a>
+              <a class="nav-link active text-info-emphasis disabled" href="./past.html">Past Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="./contact.html">Contact</a>
@@ -64,64 +64,41 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="card text-center border-0">
-          <img style="height: 270px;" src="../images/food_fair.jpg" class="card-img-top" alt="food-fair"
-            title="food-fair">
-          <div class="card-body">
-            <h5 class="card-title">Festival of the collectivities</h5>
-            <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the whole
-              family.</p>
-            <p class="card-text">$5</p>
-            <a href="#" class="btn btn-primary">Details</a>
-          </div>
-        </div>
+  <div class="py-4 text-center bg-dark">
+    <div class="row col-12">
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <input type="checkbox" name="party" id="costume-party" value="selected event">
+        <label class="box-one" for="costume-party">Costume Party</label>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="card text-center border-0">
-          <img style="height: 270px;" src="../images/outing_to_the_museum.jpg" class="card-img-top" alt="museum"
-            title="museum">
-          <div class="card-body">
-            <h5 class="card-title">Art Exhibition</h5>
-            <p class="card-text">Let's go to the art museum for an incredible tour to learn about the largest dinosaurs.
-            </p>
-            <p class="card-text">$15</p>
-            <a href="#" class="btn btn-primary">Details</a>
-          </div>
-        </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <input type="checkbox" name="music" id="music-concert" value="selected event">
+        <label class="box-one" for="music-concert">Music Concert</label>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="card text-center border-0">
-          <img style="height: 270px;" src="../images/marathon.jpg" class="card-img-top" alt="marathon" title="marathon">
-          <div class="card-body">
-            <h5 class="card-title">10K for life</h5>
-            <p class="card-text">Come and exercise with professional routines, improve your health and lifestyle.</p>
-            <p class="card-text">$3</p>
-            <a href="#" class="btn btn-primary">Details</a>
-          </div>
-        </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <input type="checkbox" name="races" id="race" value="selected event">
+        <label class="box-one" for="race">Race</label>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="card text-center border-0">
-          <img style="height: 270px;" src="../images/books.jpg" class="card-img-top" alt="books" title="books">
-          <div class="card-body">
-            <h5 class="card-title">School Book Fair</h5>
-            <p class="card-text">Bring your unused school book and bring the one you need.</p>
-            <p class="card-text">$1</p>
-            <a href="#" class="btn btn-primary">Details</a>
-          </div>
-        </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <input type="checkbox" name="book" id="book-exchange" value="selected event">
+        <label class="box-one" for="book-exchange">Book Exchange</label>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <input type="checkbox" name="film" id="cinema" value="selected event">
+        <label class="box-one" for="cinema">Let's go to the Cinema</label>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <input type="search" name="search" id="search">
+        <label class="box-one" for="search">Search</label>
       </div>
     </div>
   </div>
+  <div id="cards" class="d-flex gap-3 flex-wrap justify-content-center align-items-center pb-5 mt-5"></div>
   <footer>
     <div class="container-fluid bg-dark p-4 text-center">
       <div class="row">
-        <div class="col"><a href="#" class="text-decoration-none">SOCIAL</a></div>
-        <div class="col"><a href="#" class="text-decoration-none">SOCIAL</a></div>
-        <div class="col"><a href="#" class="text-decoration-none">SOCIAL</a></div>
+        <div class="col-sm-4 col-md-3 col-lg-3"><img src="../images/facebook.png" alt="facebook" title="facebook"></div>
+        <div class="col-sm-4 col-md-3 col-lg-3"><img src="../images/instagram.png" alt="instagram" title="instagram"></div>
+        <div class="col-sm-4 col-md-3 col-lg-3"><img src="../images/whatsapp.png" alt="whatsapp" title="whatsapp"></div>
         <h4 class="col text-white">COHORT N°49</h4>
       </div>
     </div>
@@ -130,6 +107,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+    <script src="../data/data.js"></script>
+    <script src="../scripts/past.js"></script>
 </body>
 
 </html>
