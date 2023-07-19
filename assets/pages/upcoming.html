@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-5">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link text-white" aria-current="page" href="../../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-white" href="./upcoming.html">Upcoming Events</a>
+              <a class="nav-link active text-info disabled" href="./upcoming.html">Upcoming Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="./past.html">Past Events</a>
@@ -44,7 +44,8 @@
     </nav>
   </header>
   <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
+    <div class="carousel-inner position-relative">
+      <h1 class="position-absolute text-white z-3 top-50 start-50 translate-middle">UPCOMING EVENTS</h1>
       <div class="carousel-item active" style="max-height: 480px;">
         <img src="../images/optional_banner_3.jpg" class="d-block w-100" alt="books" title="books">
       </div>
@@ -64,59 +65,33 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="card text-center border-0">
-          <img style="height: 270px;" src="../images/costume_party.jpg" class="card-img-top" alt="costume-party"
-            title="costume-party">
-          <div class="card-body">
-            <h5 class="card-title">Halloween Night</h5>
-            <p class="card-text">Come in your scariest costume character to win amazing prizes.</p>
-            <p class="card-text">$12</p>
-            <a href="#" class="btn btn-primary">Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="card text-center border-0">
-          <img style="height: 270px;" src="../images/music_concert.jpg" class="card-img-top" alt="music-concert"
-            title="music-concert">
-          <div class="card-body">
-            <h5 class="card-title">Metallica in concert</h5>
-            <p class="card-text">The only concert of the most emblematic band in the world</p>
-            <p class="card-text">$150</p>
-            <a href="#" class="btn btn-primary">Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="card text-center border-0">
-          <img style="height: 270px;" src="../images/cinema.jpg" class="card-img-top" alt="cinema" title="cinema">
-          <div class="card-body">
-            <h5 class="card-title">Avengers</h5>
-            <p class="card-text">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes</p>
-            <p class="card-text">$250</p>
-            <a href="#" class="btn btn-primary">Details</a>
-          </div>
-        </div>
-      </div>
+  <div class="py-4 text-center bg-dark text-white">
+    <div id="checkbox" class="row col-12 flex-row-reverse">
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <input type="search" name="search" id="search">
+        <label class="box-one" for="search">Search</label>
+      </div> 
     </div>
   </div>
+
+  <div id="cards" class="d-flex gap-3 flex-wrap justify-content-center align-items-center pb-5 mt-5"></div>
+  
   <footer>
     <div class="container-fluid bg-dark p-4 text-center">
       <div class="row">
-        <div class="col"><a href="#" class="text-decoration-none">SOCIAL</a></div>
-        <div class="col"><a href="#" class="text-decoration-none">SOCIAL</a></div>
-        <div class="col"><a href="#" class="text-decoration-none">SOCIAL</a></div>
+        <div class="col-sm-4 col-md-3 col-lg-3"><img src="../images/facebook.png" alt="facebook" title="facebook"></div>
+        <div class="col-sm-4 col-md-3 col-lg-3"><img src="../images/instagram.png" alt="instagram" title="instagram"></div>
+        <div class="col-sm-4 col-md-3 col-lg-3"><img src="../images/whatsapp.png" alt="whatsapp" title="whatsapp"></div>
         <h4 class="col text-white">COHORT N°49</h4>
       </div>
     </div>
   </footer>
 
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+  <script type="module" src="../scripts/upcoming.js"></script>
 </body>
 
 </html>

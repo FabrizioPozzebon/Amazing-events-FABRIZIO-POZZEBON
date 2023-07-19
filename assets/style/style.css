@@ -9,3 +9,25 @@
 .nav-one{
     color: white;
 }
+body{
+    height: 100vh;
+}
+main{
+    min-height: 80vh;
+}
+footer{
+    min-height: 5vh;
+}
+header{
+    min-height: 5vh;
+}
+.card{
+    width: 25rem;
+    height: 30rem;
+}
+.card-img-top{
+    height: 15rem;
+}
+.card-body{
+    height: 10rem;
+}
